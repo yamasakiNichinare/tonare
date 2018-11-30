@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* table of contents----------------------------------
+1.ページトップ
+----------------------------------------------------*/
+
+//1.ページトップ
+#toTheTop {
+    position: fixed;
+    right: $wide*3;
+    bottom: $wide*3;
+    display: none;
+    z-index: 10;
+    a {
+        display: block;
+        color: $white;
+        font-size: 5rem;
+        text-decoration: none;
+        border: 1px solid $darkblue;
+        border-radius: 50%;
+        background: $darkblue;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

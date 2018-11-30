@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* table of contents----------------------------------
+1.フッター
+2.ボタンエリア
+----------------------------------------------------*/
+//1.フッター
+.footer {
+    font-size: $tiny_rem;
+    background: $darkblue;
+    padding: $wide*3 $wide;
+    color: $white;
+    text-align: center;
+    ul {
+        text-align: center;
+        margin-bottom: $wide*3;
+        font-size: 0;
+        li {
+            display: inline-block;
+        }
+        &.sns {
+            li {
+                margin-right: $wide*2.4;
+                &:nth-child(1) {
+                    a {
+                        &:hover {
+                            color: $twitter;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    a {
+                        &:hover {
+                            color: $facebook;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    a {
+                        &:hover {
+                            color: $line;
+                        }
+                    }
+                }
+                &:last-of-type {
+                    margin: 0;
+                }
+                a {
+                    font-size: 4rem;
+                    color: $white;
+                    padding: 0;
+                    margin: 0;
+                    display: block;
+                    height: $wide*3.5;
+                }
+                .fa-twitter-square {
+                    position: relative;
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        background: $white;
+                        top: 10px;
+                        left: 3px;
+                        width: $wide*3.5;
+                        height: $wide*3.5;
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.info {
+            li {
+                margin-right: $wide*1.4;
+                &:last-of-type {
+                    margin: 0;
+                }
+                a {
+                    font-size: $large_rem;
+                    color: $white;
+                }
+            }
+        }
+    }
+    small {
+        text-align: center;
+        display: block;
+        font-size: $normal_rem;
+    }
+}
+//2.ボタンエリア
+.btnArea {
+    div {
+        margin: $wide*4 auto;
+        width: $wide*40;
+        &:last-of-type {
+            margin-top: $wide*4;
+        }
+    }
+    a {
+        height: $wide*4;
+        line-height: $wide*4;
+        font-size: 2rem;
+        transition: all linear 0.3s;
+        &:hover {
+            background: $darkblue;
+            color: $white;
+        }
+        .fa-clipboard {
+            margin-right: 4px;
+            font-size: 2rem;
+        }
+        .fa-question-circle {
+            margin-right: 4px;
+            font-size: 2rem;
+        }
+    }
+}

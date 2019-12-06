@@ -33,22 +33,10 @@
     <link rel="apple-touch-icon" href="https://tonare.co.jp/assets/images/common/thumbnail.png">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115044264-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-115044264-1');
-        gtag('config', 'AW-812230876');
-    </script>
 </head>
 
 <body id="top">
+
     <!--ヘッダー-->
     <header class="header">
         <div class="header__inner">
@@ -80,12 +68,12 @@
             <!--//.header__right-->
         </div>
         <!--//.header__inner-->
-        <nav class="forPC" id="#theNav">
+        <nav class="forPC">
             <ul>
                 <li><a href="#news">最新情報</a></li>
                 <li><a href="#everyone">声優をめざされる皆様へ</a></li>
                 <li><a href="#about">東ナレの特色</a></li>
-                <li><a href="#overview">レッスン概要</a></li>
+                <li><a href="#onceaweekclass">レッスン概要</a></li>
                 <li><a href="#howto">入所方法／審査日程</a></li>
                 <li><a href="#studio">レッスンスタジオ</a></li>
                 <li><a href="#production">グループプロダクション</a></li>
@@ -96,17 +84,26 @@
     <div class="wrapper">
         <!--スライダー-->
         <div class="swiper-container">
+            <div id="snow">
+                <div class="inner">
+                    <div class="flake1"></div>
+                    <div class="flake2"></div>
+                    <div class="flake3"></div>
+                    <div class="flake4"></div>
+                    <div class="flake5"></div>
+                    <div class="flake6"></div>
+                    <div class="flake7"></div>
+                    <div class="flake8"></div>
+                    <div class="flake9"></div>
+                </div>
+                <p class="snowman"><img src="assets/images/top/snowman.png" alt="雪だるま"></p>
+            </div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide swiper_img swiper_img04">
-                    <p class="p1">1月生限定募集(今期最終)</p>
-                    <p class="p2">3ヶ月間の経験者対象クラス<br>週1回3時間×2レッスン</p>
-                    <p class="p3">入所金2万円 受講料8万円(3ヶ月間)</p>
-                </div>
                 <div class="swiper-slide swiper_img swiper_img01">
-                    <p class="p1">19年度4月生募集開始</p>
-                    <p class="p2">入所金2万円<br>年間受講料16万円</p>
+                    <p class="p1"><img src="assets/images/top/m_text01.png" alt="2020年度4月生募集開始"></p>
+                    <p class="p2">入所金2万円　年間受講料16万円</p>
+                    <p class="p3"><img src="assets/images/top/jfont01.png" alt="ジュニアクラス(入所金のみ)は随時入所可"></p>
                 </div>
                 <div class="swiper-slide swiper_img swiper_img02">
                     <p class="p1">「東ナレ」が採用する「日ナレ式」とは</p>
@@ -152,6 +149,12 @@
             <div class="wall__inner">
                 <!--メインコンテンツ-->
                 <main>
+                    <!--お知らせ-->
+                    <section class="boxInfo">
+                        <h1 class="boxInfo_title"><i class="far fa-lightbulb"></i>お知らせ<span class="new">NEW!</span></h1>
+                        <p>ジュニアクラスでは中学生の<strong style="font-weight:bold;text-decoration:underline">レッスン見学</strong>を実施しています。<br>見学をご希望の方は【レッスン概要】ジュニアクラスの項目をご覧ください。</p>
+                    </section>
+                    <!--//お知らせ-->
                     <!--最新情報-->
                     <section class="box" id="news">
                         <h2>最新情報<i class="fas fa-chevron-down forSP"></i></h2>
@@ -160,94 +163,25 @@
                                 <ul class="newslist">
                                     <li class="newslist__item">
                                         <div class="newslist__item__inner">
-                                            <time datetime="2018-11-10">2018.11.10</time>
-                                            <p class="withUnderLine">12月の<a href="#theDate">審査日程</a>を追加しました。<span class="new">NEW!</span></p>
+                                            <time datetime="2019-12-06">2019.12.06</time>
+                                            <p class="withUnderLine"><a href="#theDate">1月の審査日程</a>を追加しました。<span class="new">NEW!</span></p>
                                         </div>
                                     </li>
                                     <li class="newslist__item">
                                         <div class="newslist__item__inner">
-                                            <time datetime="2018-10-26">2018.10.26</time>
-                                            <p class="withUnderLine">1月生の<a href="#jan">開設クラス詳細</a>を追加しました。</p>
+                                            <time datetime="2019-10-16">2019.10.16</time>
+                                            <p class="withUnderLine"><a href="#apr">2020年度4月生の募集</a>を開始しました。</p>
                                         </div>
                                     </li>
                                     <li class="newslist__item">
                                         <div class="newslist__item__inner">
-                                            <time datetime="2018-10-23">2018.10.23</time>
-                                            <p class="withUnderLine"><a href="#jan">2018年度1月生</a>募集を開始しました。</p>
-                                        </div>
-                                    </li>
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-10-02">2018.10.02</time>
-                                            <p class="withUnderLine"><a href="#apr">2019年度4月生</a>募集を開始しました。</p>
-                                        </div>
-                                    </li>
-                                    <!--
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-09-07">2018.09.07</time>
-                                            <p class="withUnderLine"><a href="#theDate">審査日程</a>を追加しました。<span class="new">NEW!</span></p>
-                                        </div>
-                                    </li>
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-08-31">2018.08.31</time>
-                                            <p class="withUnderLine"><a href="#theDate">審査日程</a>を追加しました。</p>
-                                        </div>
-                                    </li>
-                                    -->
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-07-18">2018.07.18</time>
-                                            <p class="withUnderLine"><a href="#oct">2018年度10月生</a>の募集を開始しました。</p>
-                                        </div>
-                                    </li>
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-07-18">2018.07.18</time>
-                                            <p class="withUnderLine"><a href="#jr">ジュニアクラス</a>（新設）の募集を開始しました。</p>
-                                        </div>
-                                    </li>
-                                    <!--
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-06-23">2018.06.23</time>
-                                            <p class="withUnderLine"><a href="#theDate">審査日程</a>を追加しました。</p>
-                                        </div>
-                                    </li>
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-04-20">2018.04.20</time>
-                                            <p class="withUnderLine">審査日程を公開しました。</p>
-                                        </div>
-                                    </li>
-                                    -->
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-04-20">2018.04.20</time>
-                                            <p class="withUnderLine">レッスンスタジオの情報を公開しました。</p>
-                                        </div>
-                                    </li>
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-04-10">2018.04.10</time>
-                                            <p class="withUnderLine">グループプロダクションに「<a href="http://clare-voice.co.jp/" target="_blank">クレアボイス</a>」が加わりました。</p>
-                                        </div>
-                                    </li>
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-03-10">2018.03.10</time>
-                                            <p class="withUnderLine">2018年度7月生の募集を開始しました。<br><a href="contact.php">資料請求</a>フォームより資料請求をお願いします。（無料）</p>
-                                        </div>
-                                    </li>
-                                    <li class="newslist__item">
-                                        <div class="newslist__item__inner">
-                                            <time datetime="2018-03-09">2018.03.09</time>
-                                            <p class="withUnderLine">グループプロダクションの「<a href="http://bright-idea.jp/" target="_blank">ブライト イデア</a>」が公式ホームページを公開しました</p>
+                                            <time datetime="2019-10-16">2019.10.16</time>
+                                            <p class="withUnderLine"><a href="#juniorclass">ジュニアクラス・レッスン見学</a>の情報を追加しました。</p>
                                         </div>
                                     </li>
                                 </ul>
                                 <!--//.newslist-->
+                                <p class="text_right">過去の最新情報は<span class="withUnderLine"><a href="pastnews.html">こちら</a></span></p>
                             </div>
                         </div>
                     </section>
@@ -315,7 +249,7 @@
                                                 </li>
                                                 <li>
                                                     <span class="number"><i class="fas fa-check-square"></i></span>
-                                                    <span class="text">プロダクション所属者（合格者）もレッスンの継続が可能です。<br>年度末にグループプロダクションへの所属審査がありますが、基礎科・本科・研修科のどの科の方でも、合格後も引き続き「東ナレ」でレッスンを受講いただけます。所属者は事務所を支える大切な人材ですので、当然ですが受講料はいただきません。「東ナレ」も受講料返金制度（日ナレ式）を採用しており、規定の年数を無料で受講いただけますので、所属後も演技スキルを磨き、出演やオーディションに臨んでください。</span>
+                                                    <span class="text">プロダクション所属者（合格者）もレッスンの継続が可能です。<br>年度末にグループプロダクションへの所属審査がありますが、基礎科・本科・研修科のどの科の方でも、合格後も引き続き「東ナレ」でレッスンをご受講いただけます。所属者は事務所を支える大切な人材ですので、当然ですが受講料はいただきません。「東ナレ」も受講料返金制度（日ナレ式）を採用しており、規定の年数を無料でご受講いただけますので、所属後も演技スキルを磨き、出演やオーディションに臨んでください。</span>
                                                 </li>
                                             </ol>
                                             <p class="groupImg"><img src="assets/images/top/grounp_company.png" alt="東京ナレーション演技研究所　ブライト イデア　4月上旬合流予定のプロダクション"></p>
@@ -326,18 +260,14 @@
                         </div>
                     </section>
                     <!--//東ナレの特色-->
-                    <!--レッスン概要-->
-                    <section class="box" id="overview">
-                        <h2>レッスン概要<i class="fas fa-chevron-down forSP"></i></h2>
+                    <!--週1回クラス-->
+                    <section class="box overview" id="onceaweekclass">
+                        <h2>週1回クラス<i class="fas fa-chevron-down forSP"></i></h2>
                         <div class="box__contents box__lightblue">
                             <div class="box__contents__inner box__white">
-                                <ul class="nav">
-                                    <li class="withUnderLine"><a href="#once">週１回クラス<i class="fas fa-angle-down"></i></a></li>
-                                    <li class="withUnderLine"><a href="#jr">ジュニアクラス<i class="fas fa-angle-down"></i></a></li>
-                                </ul>
                                 <!--週1回クラス-->
                                 <section>
-                                    <h3 id="once">週1回クラス</h3>
+                                    <h3 id="once">週1回クラスとは</h3>
                                     <ul class="iconList">
                                         <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">実力に合わせて基礎科・本科・研修科へとステップアップしていくレベル別学科制です。</span></li>
                                         <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">演技レッスン未経験の方は、原則として基礎科から学んでいただきます。</span></li>
@@ -365,88 +295,14 @@
                                             <img src="assets/images/top/step_flow.png" alt="グループプロダクション所属へのステップフロー">
                                         </figure>
                                     </section>
-                                    <!--1月生-->
-                                    <section>
-                                        <h4 id="jan">2018年度1月生・受講概要<span class="current forPC">現在募集中はこちら!</span><span class="current forSP">募集中!</span></h4>
-                                        <ul class="iconList">
-                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">1月生は、1月～3月の3ヶ月間に1日3時間×2レッスンを受講する短期集中レッスンのクラスです。</span></li>
-                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">演技経験者を対象としたクラスです。</span></li>
-                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">スタジオの都合上、曜日・時間を指定しての開設となります。定員になり次第締め切らせていただきます。</span></li>
-                                        </ul>
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <th>開設クラス</th>
-                                                    <td>本科（演技経験者対象）</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>受講対象年齢</th>
-                                                    <td>中学卒業以上〜40歳まで</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>レッスン期間</th>
-                                                    <td>2019年1月〜3月まで</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>レッスン回数</th>
-                                                    <td>週1回 </td>
-                                                </tr>
-                                                <tr>
-                                                    <th>レッスン時間</th>
-                                                    <td>3時間&nbsp;×&nbsp;2レッスン</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>入所金</th>
-                                                    <td>2万円（税込み）</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>年間受講料</th>
-                                                    <td>8万円（税込み）</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>開設クラス詳細</th>
-                                                    <td>
-                                                        <ul>
-                                                            <li class="list">
-                                                                <span class="date">①水曜日</span>
-                                                                <span class="time">14:30〜21:00</span>
-                                                            </li>
-                                                            <li class="list">
-                                                                <span class="date">②木曜日</span>
-                                                                <span class="time">14:30〜21:00</span>
-                                                            </li>
-                                                            <li class="list">
-                                                                <span class="date">③金曜日</span>
-                                                                <span class="time">14:30〜21:00</span>
-                                                            </li>
-                                                            <li class="list">
-                                                                <span class="date">④土曜日</span>
-                                                                <span class="time">14:30〜21:00</span>
-                                                            </li>
-                                                            <li class="list">
-                                                                <span class="date">⑤日曜日</span>
-                                                                <span class="time">11:00〜17:30</span>
-                                                            </li>
-                                                            <li class="list">
-                                                                <span class="date">⑥日曜日</span>
-                                                                <span class="time">14:30〜21:00</span>
-                                                            </li>
-                                                        </ul>
-                                                        <p class="rest">(30分程度の休憩あり)</p>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <ul class="iconList small_t_list">
-                                            <li><span class="icon">※</span><span class="text">一定数に達しなかった場合は、開設を見送らせていただくことがございますので、あらかじめご了承ください。</span></li>
-                                            <li><span class="icon">※</span><span class="text">入所金・受講料は一括納入のみとなります。</span></li>
-                                            <li><span class="icon">※</span><span class="text">2019年1月～3月＜3ヶ月間＞までの受講料となります。</span></li>
-                                        </ul>
-                                    </section>
-                                    <!--//1月生-->
                                     <!--4月生-->
                                     <section>
-                                        <h4 id="apr">2019年度4月生・受講概要<span class="current forPC">現在募集中はこちら!</span><span class="current forSP">募集中!</span></h4>
+                                        <h4 id="apr">2020年度4月生・受講概要<span class="current">現在、募集中はこちら！</span></h4>
+                                        <!--
+                                        <ul class="iconList">
+                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">募集の開始時期については確定次第お知らせいたします。</span></li>
+                                        </ul>
+                                    -->
                                         <table>
                                             <tbody>
                                                 <tr>
@@ -479,9 +335,9 @@
                                     <!--//4月生-->
                                     <!--7月生-->
                                     <section>
-                                        <h4>2019年度7月生・受講概要<span class="current_not">詳細はお問い合わせください</span></h4>
+                                        <h4 id="jul">2020年度7月生・受講概要<span class="current_not">現在募集しておりません</span></h4>
                                         <ul class="iconList">
-                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">募集の開始時期についてはお問い合わせください。</span></li>
+                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">募集の開始時期については確定次第お知らせいたします。</span></li>
                                         </ul>
                                         <table>
                                             <tbody>
@@ -515,9 +371,10 @@
                                     <!--//7月生-->
                                     <!--10月生-->
                                     <section>
-                                        <h4 id="oct">2019年度10月生・受講概要<span class="current_not">現在募集しておりません</span></h4>
+                                        <h4 id="oct">2020年度10月生・受講概要<span class="current_not">現在募集しておりません</span></h4>
                                         <ul class="iconList">
-                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">10月生は、入所年度の前半3ヶ月に1日3時間×2レッスンを受講していただくことで、7月生と同じレッスン回数を受講する、短期集中レッスンのクラスです。</span></li>
+                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">募集の開始時期については確定次第お知らせいたします。</span></li>
+                                            <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">10月生は、入所年度の前半3ヶ月に1日3時間×2レッスンをご受講いただくことで、7月生と同じレッスン回数を受講する、短期集中レッスンのクラスです。</span></li>
                                             <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">スタジオの都合上、曜日・時間を指定しての開設となります。定員になり次第締め切らせていただきます。</span></li>
                                         </ul>
                                         <table>
@@ -532,7 +389,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th>レッスン期間</th>
-                                                    <td>10月頃〜翌年3月まで</td>
+                                                    <td>10月〜翌年3月まで</td>
                                                 </tr>
                                                 <tr>
                                                     <th>レッスン回数</th>
@@ -580,7 +437,7 @@
                                             </tbody>
                                         </table>
                                         <ul class="iconList small_t_list">
-                                            <li><span class="icon">※</span><span class="text">各クラスにおいて一定数に達しなかった場合は、開設を見送らせていただくことがございますので、あらかじめご了承ください。</span></li>
+                                            <li><span class="icon">※</span><span class="text">受講希望者数が一定人数に達しない場合、ご希望されるクラスが開設されない可能性があります。</span></li>
                                             <li><span class="icon">※</span><span class="text">年間受講料のみ分割納入可能です。（2分割）</span></li>
                                             <li><span class="icon">※</span><span class="text">10月から翌年3月＜6ヶ月＞までの受講料となります。</span></li>
                                         </ul>
@@ -588,12 +445,21 @@
                                     <!--//10月生-->
                                 </section>
                                 <!--//週1回クラス-->
-
+                            </div>
+                        </div>
+                    </section>
+                    <!--//週1回クラス-->
+                    <!--ジュニアクラス-->
+                    <section class="box overview" id="juniorclass">
+                        <h2>ジュニアクラス<i class="fas fa-chevron-down forSP"></i></h2>
+                        <div class="box__contents box__lightblue">
+                            <div class="box__contents__inner box__white">
                                 <!--ジュニアクラス-->
                                 <section>
-                                    <h3 id="jr">ジュニアクラス</h3>
+                                    <h3 id="jr">ジュニアクラスとは</h3>
                                     <ul class="iconList">
-                                        <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">中学1年生から中学3年生を対象とした、学校に通いながら無理なくレッスンが受けられるクラスです。※2018年度のみ小学6年生から入所可能です。</span></li>
+                                        <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">中学1年生から中学3年生を対象とした、学校に通いながら無理なくレッスンが受けられるクラスです。</span></li>
+                                        <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">週1回クラスのプレクラスのため、入所金のみでご受講いただけます。</span></li>
                                         <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">部活動などで演技経験がない方でも安心して受けられるレッスンです。</span></li>
                                         <li><span class="icon"><i class="fas fa-pen-square"></i></span><span class="text">随時入所することが可能です。</span></li>
                                     </ul>
@@ -604,43 +470,69 @@
                                         </figure>
                                     </section>
                                     <section>
-                                        <h4>ジュニアクラス・受講概要</h4>
+                                        <h4>ジュニアクラス・受講概要<span class="current">随時受付中!</span></h4>
                                         <table>
                                             <tbody>
                                                 <tr>
                                                     <th>受講対象年齢</th>
-                                                    <td>中学1年生〜中学3年生まで<br>※2018年度のみ小学6年生から入所可能です。</td>
+                                                    <td>中学1年生〜中学3年生まで</td>
                                                 </tr>
                                                 <tr>
                                                     <th>レッスン回数</th>
-                                                    <td>週1回 </td>
+                                                    <td>週1回</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>レッスン時間</th>
+                                                    <td>2時間</td>
                                                 </tr>
                                                 <tr>
                                                     <th>レッスン曜日</th>
-                                                    <td>日曜日（予定）</td>
+                                                    <td>水曜日<br class="SP"><span>（年度によって異なります）</span></td>
                                                 </tr>
                                                 <tr>
                                                     <th>入所金</th>
                                                     <td>2万円（税込み）</td>
                                                 </tr>
                                                 <tr>
-                                                    <th>月額受講料</th>
-                                                    <td>5千円（税込み）</td>
+                                                    <th>受講料</th>
+                                                    <td><span class="redText"><span style="width:40px;height:2px;line-height: 2px;background-color:#666;display:inline-block;margin-right:4px">&nbsp;</span>※1</span>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                         <ul class="iconList small_t_list">
-                                            <li><span class="icon">※</span><span class="text">一定数に達しなかった場合は、開設を見送らせていただくことがございますので、あらかじめご了承ください。</span></li>
-                                            <li><span class="icon">※</span><span class="text">月額受講料は3ヶ月分をまとめてのお支払いとなります。</span></li>
-                                            <li><span class="icon">※</span><span class="text">10月以降も<strong class="redText">随時入所可能</strong>です。1月以降については、入所が難しい場合がございますので、ご相談ください。</span></li>
+                                            <li><span class="icon" style="width:28px;">※</span><span class="text">曜日・時間帯は年度により異なる場合があります。</span></li>
+                                            <li><span class="icon" style="width:28px;">※</span><span class="text">受講希望者数が一定人数に達しない場合、ご希望されるクラスが開設されない可能性があります。</span></li>
+                                            <li><span class="icon" style="width:28px;">※</span><span class="text">定員等により、ご入所いただけない場合があります。</span></li>
+                                            <li><span class="icon redText" style="width:26px;">※1</span><span class="text">ジュニアクラスは週1回クラスのプレクラスとなりますので、受講料は必要ありません。</span></li>
                                         </ul>
                                     </section>
+                                    <!--ジュニアクラス・レッスン見学-->
+                                    <section class="jwatch">
+                                        <h3>ジュニアクラス・レッスン見学</h3>
+                                        <p><span class="icon"><i class="fas fa-pen-square"></i></span>ジュニアクラスのレッスン見学を実施いたします。</p>
+                                        <ul>
+                                            <li>＜対象＞　中学1年生〜中学3年生まで</li>
+                                            <li>＜日時＞　水曜日　18:00～20:00</li>
+                                            <li>＜会場＞　駒込スタジオ</li>
+                                        </ul>
+                                        <ul>
+                                            <li>※参加日は調整させていただく場合がございます。</li>
+                                            <li>※週１回クラスのレッスン見学は実施しておりません。</li>
+                                        </ul>
+                                        <section>
+                                            <h4>申込方法</h4>
+                                            <p>資料請求をしていただき、資料に同封されている『レッスン見学申込書』<br>に必要事項をご記入のうえ、お申し込みください。<br>追って、日時や場所などの詳細をお送りいたします。</p>
+                                        </section>
+                                    </section>
+                                    <!--//ジュニアクラス・レッスン見学-->
                                 </section>
                                 <!--//ジュニアクラス-->
                             </div>
                         </div>
                     </section>
-                    <!--//レッスン概要-->
+                    <!--//ジュニアクラス-->
+
                     <!--入所方法／審査日程-->
                     <section class="box" id="howto">
                         <h2>入所方法／審査日程<i class="fas fa-chevron-down forSP"></i></h2>
@@ -648,7 +540,7 @@
                             <div class="box__contents__inner box__white">
                                 <section>
                                     <h3>入所方法</h3>
-                                    <p>資料請求のうえ、同封されている希望入所時期用の「入所申込書／調査票」に必要事項をご記入いただき、写真を貼付のうえ、お申し込みください。<br>追って、審査内容・審査会場などの詳細をお送りいたします。<br>また、ご提出いただいた「入所申込書／調査票」の返却はできませんのでご了承ください。</p>
+                                    <p>資料請求のうえ、同封されている希望クラス用の「入所申込書／調査票」に必要事項をご記入いただき、写真を貼付のうえ、お申し込みください。<br>追って、審査内容・審査会場などの詳細をお送りいたします。<br>また、ご提出いただいた「入所申込書／調査票」の返却はできませんのでご了承ください。</p>
                                     <ul class="iconList small_t_list">
                                         <li><span class="icon">※</span><span class="text">資料請求／無料</span></li>
                                         <li><span class="icon">※</span><span class="text">入所審査／無料</span></li>
@@ -658,53 +550,90 @@
                                         <ul class="iconList">
                                             <li>
                                                 <span class="icon"><i class="fas fa-pen-square"></i></span>
-                                                <span class="text">2018年度1月生、2019年度4月生、ならびにジュニアクラスの入所審査を下記の日程で行います。</span>
+                                                <span class="text">2020年度4月生の入所審査を下記の日程で行います。</span>
                                             </li>
                                             <li>
                                                 <span class="icon"><i class="fas fa-pen-square"></i></span>
-                                                <span class="text">入所審査は2019年3月頃まで順次開催していく予定です。</span>
+                                                <span class="text">2019年度ジュニアクラスの入所審査は毎週日曜日に行います。<br>入所申込書にご都合の良い日程をご記入ください。確認後、折り返しご連絡いたします。<br>また、その他の日程をご希望される方は、お電話にてご相談ください。</span>
                                             </li>
                                         </ul>
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <th>
-                                                        審査日程
-                                                        <!--<p><strong>【最終】</strong></p>-->
-                                                    </th>
-                                                    <th>
-                                                        申込締切日
-                                                        <!--<p>お問い合わせ<br>ください。</p>-->
-                                                    </th>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <time datetime="2018-12-9"><strong>１２月９日（日）</strong></time>
-                                                    </td>
-                                                    <td>
-                                                        <time datetime="2018-12-4">12月4日(火)</time>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <time datetime="2018-12-14"><strong>１２月１４日（金）</strong></time>
-                                                    </td>
-                                                    <td>
-                                                        <time datetime="2018-12-7">12月7日(金)</time>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <time datetime="2018-12-16"><strong>１２月１６日（日）</strong></time>
+                                        <section class="theTable">
+                                            <h5>＜週１回クラス＞</h5>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            審査日程
+                                                            <!--
+                                                        <p><strong>【最終】</strong></p>
                                                         <p><strong>【最終(1月生)】</strong></p>
-                                                    </td>
-                                                    <td>
-                                                        <time datetime="2018-12-11">12月11日(火)</time>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <p class="c_text redText">※各締切日必着</p>
+                                                        -->
+                                                        </th>
+                                                        <th>
+                                                            申込締切日
+                                                            <!--<p>お問い合わせ<br>ください。</p>-->
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <time datetime="2019-12-14"><strong>１２月１４日（土）</strong></time>
+                                                        </td>
+                                                        <td>
+                                                            <time datetime="2019-12-09">12月9日（月）</time>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <time datetime="2019-12-22"><strong>１２月２２日（日）</strong></time>
+                                                        </td>
+                                                        <td>
+                                                            <time datetime="2019-12-16">12月16日（月）</time>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <time datetime="2019-01-18"><strong>１月１８日（土）</strong></time>
+                                                        </td>
+                                                        <td>
+                                                            <time datetime="2019-01-11">1月11日（土）</time>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <time datetime="2019-01-26"><strong>１月２６日（日）</strong></time>
+                                                        </td>
+                                                        <td>
+                                                            <time datetime="2019-01-18">1月18日（土）</time>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="c_text redText">※各締切日必着</p>
+                                        </section>
+                                        <section class="theTable">
+                                            <h5>＜ジュニアクラス＞</h5>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            審査日程
+                                                        </th>
+                                                        <th>
+                                                            申込締切日
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>毎週<br>日曜日</p>
+                                                        </td>
+                                                        <td rowspan="2">
+                                                            <p>審査希望日の<br>7日前</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="c_text redText">※各締切日必着</p>
+                                        </section>
                                     </section>
                                     <section>
                                         <h4>注意事項</h4>
@@ -823,7 +752,7 @@
             <div class="info forSP">
                 <p class="info_title">&#8810;お問い合わせ&#8811;</p>
                 <p class="info_tel"><i class="fas fa-mobile-alt"></i>03-3372-5611</p>
-                <p class="info_date">営業時間：水〜日/12:00〜19:00</p>
+                <p class="info_date">営業日／水〜日曜日<br>営業時間／12:00〜19:00</p>
             </div>
             <small>&copy; 2018 東京ナレーション演技研究所 All Rights Reserved.</small>
         </div>
@@ -852,7 +781,7 @@
     </nav>
     <!--//固定フッター（SP用）-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/jquery.sticky-sidebar.js"></script>

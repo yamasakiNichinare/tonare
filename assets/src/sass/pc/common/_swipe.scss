@@ -1,20 +1,137 @@
-@charset "utf-8";
 /* table of contents----------------------------------
 1.swipe
 ----------------------------------------------------*/
 //1.swipe
+//かぼちゃ
+.aicon {
+    position: absolute;
+    z-index: 8;
+}
+.icon_kuma {
+    right: 20%;
+    animation: r1 6s linear infinite;
+    img {
+        width: 50px;
+    }
+}
+.icon_shika {
+    left: 40%;
+    animation: r2 6s linear infinite;
+    animation-delay: 3s;
+    bottom: -60px;
+    img {
+        width: 80px;
+    }
+}
+.icon_risu {
+    right: 40%;
+    animation: r3 6s linear infinite;
+    animation-delay: 5s;
+    bottom: -60px;
+    img {
+        width: 40px;
+    }
+}
+.icon_usagi {
+    left: 20%;
+    animation: r4 6s linear infinite;
+    animation-delay: 7s;
+    bottom: -30px;
+    img {
+        width: 50px;
+    }
+}
+
+@keyframes r1 {
+  0%{bottom:-200px;}
+  50%{bottom:-20px;}
+  100% {bottom: -200px;}
+}
+@keyframes r2 {
+    0%{bottom:-200px;}
+    50%{bottom:14px;}
+    100% {bottom: -200px;}
+}
+@keyframes r3 {
+    0%{bottom:-230px;}
+    50%{bottom:16px;}
+    100% {bottom: -230px;}
+}
+@keyframes r4 {
+  0%{bottom:-150px;}
+  50%{bottom:50px;}
+  100% {bottom: -150px;}
+}
 .swiper-container {
     height: $wide*40;
     width: $wide*98;
     margin: 0 auto;
+
+    #moon {
+        width: 50px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        display: block;
+        background: url(../images/top/tree.png) repeat-x left bottom;
+        background-size: 352px 40px;
+        z-index: 10;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top:10px;
+        width: 100%;
+        height: 60px;
+        display: block;
+        background: url(../images/top/cloud.png) repeat-x left bottom;
+        background-size: 1200px 60px;
+        animation: bg-slider 80s linear infinite;
+        z-index: 10;
+    }
+
+    @keyframes bg-slider {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: -1200px 0;
+        }
+    }
 }
+
 .swiper_img {
     padding: $wide*3;
     box-sizing: border-box;
 }
+
 .swiper_img01 {
-    background-color: $darkblue;
+    background: $darkblue;
     color: $white;
+    position: relative;
+
+    canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    img {
+        width: 500px;
+        display: block;
+        margin: 0 auto 40px;
+    }
     p {
         line-height: 1.5;
         font-size: 2rem;
@@ -24,11 +141,26 @@
             font-size: 4.6rem;
             margin-bottom: $wide*2;
             color: $pink;
-            padding-top: $wide*8;
+            padding-top: $wide*4;
+            span {
+                font-size: 4rem;
+            }
         }
         &.p2 {
             font-size: 2.8rem;
             margin-bottom: $wide*2.4;
+        }
+        &.p3 {
+            font-size: 2.4rem;
+            margin: 0 0 20px;
+            color: $buttonColor;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+        &.p4 {
+            color: $pink;
         }
         &.jr {
             color: #f3afad;
@@ -49,10 +181,14 @@
         }
     }
 }
+
 .swiper_img02 {
-    background: $pink url('../images/top/m.png') no-repeat 90% 86%;
-    background-size: 22%;
-    color: $darkblue;
+    //background: $pink url('../images/top/m.png') no-repeat 90% 86%;
+    //background-size: 22%;
+    background: $darkblue;
+    //background: linear-gradient(to left, #6deaf5, #2e7fe3);
+    color: $white;
+    position: relative;
     padding: $wide*7;
     p {
         @include table;
@@ -66,6 +202,7 @@
             font-size: 3rem;
             margin-bottom: $wide*1.2;
             text-align: center;
+            color: $pink;
         }
         &:last-of-type {
             margin-bottom: 0;
@@ -82,6 +219,7 @@
         }
     }
 }
+
 .swiper_img03 {
     background: $darkblue;
     color: $white;
@@ -114,29 +252,26 @@
         }
     }
 }
+
 .swiper_img04 {
     background: $pink;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     p {
         line-height: 1.5;
         text-align: center;
         color: $darkblue;
-
         &.p1 {
             font-size: 4.6rem;
             font-weight: bold;
         }
-
         &.p2 {
             font-size: 3.6rem;
             margin-top: $wide;
             line-height: 1.2;
         }
-
         &.p3 {
             font-weight: bold;
             font-size: 3.4rem;
@@ -145,6 +280,11 @@
         }
     }
 }
+
 .swiper-pagination-bullet-active {
-    background: $white;
+    background: $darkblue;
+}
+
+.swiper-pagination-bullet {
+    background: $darkblue;
 }

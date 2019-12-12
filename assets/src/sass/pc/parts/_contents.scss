@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* table of contents----------------------------------
 1.共通
 2.最新情報
@@ -16,10 +15,19 @@
 14.みなさまへ
 15.レッスンスタジオ
 ----------------------------------------------------*/
+
 //1.共通
 .wrapper {
     padding: $wide*16 0 $wide*6;
     background: $lightblue;
+    .icon {
+        color: $darkblue;
+        .fa-pen-square {
+            font-size: 1.9rem;
+            position: relative;
+            top: 2px;
+        }
+    }
     .wall {
         width: 100%;
         padding-top: $wide*6;
@@ -90,17 +98,27 @@
                     }
                 }
             }
-            section {
+            h4 {
                 margin-bottom: $wide*1.8;
-                h4 {
-                    margin-bottom: $wide*1.8;
-                    line-height: 1.4;
-                    border-bottom: 1px solid $darkblue;
-                    border-left: 4px solid $darkblue;
-                    padding-left: 4px;
-                    height: $wide*3;
-                    .current {
-                        background-color: $pink;
+                line-height: $wide*3;
+                border-bottom: 1px solid $darkblue;
+                border-left: 4px solid $darkblue;
+                padding-left: 4px;
+                height: $wide*3;
+                .current {
+                    background-color: $pink;
+                    font-size: $small_rem;
+                    margin-left: $wide;
+                    color: $white;
+                    padding: 0 $moderate;
+                    border-radius: 4px;
+                    line-height: $wide*2;
+                    height: $wide*2;
+                    font-weight: normal;
+                    vertical-align: 1px;
+                    display: inline-block;
+                    &_not {
+                        background-color: $darkblue;
                         font-size: $small_rem;
                         margin-left: $wide;
                         color: $white;
@@ -111,31 +129,21 @@
                         font-weight: normal;
                         vertical-align: 1px;
                         display: inline-block;
-                        &_not {
-                            background-color: $darkblue;
-                            font-size: $small_rem;
-                            margin-left: $wide;
-                            color: $white;
-                            padding: 0 $moderate;
-                            border-radius: 4px;
-                            line-height: $wide*2;
-                            height: $wide*2;
-                            font-weight: normal;
-                            vertical-align: 1px;
-                            display: inline-block;
-                        }
                     }
                 }
-                h5 {
-                    margin: 0;
-                    &.class {
-                        background: $darkblue;
-                        color: $white;
-                        border-radius: 2px;
-                        padding: 4px;
-                        display: inline-block;
-                    }
+            }
+            h5 {
+                margin: 0;
+                &.class {
+                    background: $darkblue;
+                    color: $white;
+                    border-radius: 2px;
+                    padding: 4px;
+                    display: inline-block;
                 }
+            }
+            section {
+                margin-bottom: $wide*1.8;
                 >.small {
                     font-size: $small_rem;
                 }
@@ -184,7 +192,8 @@
         tr {
             border: 1px solid $border;
         }
-        th,td {
+        th,
+        td {
             padding: $wide*1.2
         }
         th {
@@ -198,6 +207,7 @@
         }
     }
 }
+
 //2.最新情報
 .newslist {
     &__item {
@@ -218,18 +228,20 @@
             }
             p {
                 width: 100%;
-                .new {
-                    display: inline-block;
-                    padding: 0 4px;
-                    background: $pink;
-                    color: $white;
-                    border-radius: 4px;
-                    margin-right: $moderate;
-                    font-size: $small_rem;
-                }
+
             }
         }
     }
+}
+.new {
+    display: inline-block;
+    padding: 0 4px;
+    background: $pink;
+    color: $white;
+    border-radius: 4px;
+    margin-right: $moderate;
+    font-size: $small_rem;
+    line-height: 20px;
 }
 .historyLink {
     .fa-history {
@@ -239,6 +251,7 @@
     text-align: right;
     margin-top: $wide;
 }
+
 //3.特色
 ol {
     list-style: none;
@@ -287,16 +300,18 @@ ol {
         }
     }
 }
+
 .groupImg {
     margin-top: $wide*3;
 }
+
 .aboutMethod {
     width: $wide*50;
     margin: 0 auto !important;
     background-color: $darkblue;
     padding: $wide*2 !important;
     box-sizing: border-box;
-    &__title{
+    &__title {
         background-color: #c3d7f2;
         color: $darkblue;
         height: $wide*4;
@@ -319,6 +334,7 @@ ol {
         }
     }
 }
+
 //4.個人情報など
 .page {
     h2 {
@@ -352,6 +368,7 @@ ol {
         }
     }
 }
+
 //5.会社概要
 .company {
     >li {
@@ -401,6 +418,7 @@ ol {
         }
     }
 }
+
 //6.フォーム
 .c_text {
     @include table;
@@ -417,6 +435,7 @@ ol {
         padding-top: 4px;
     }
 }
+
 form {
     .formList {
         >li {
@@ -532,6 +551,7 @@ form {
         }
     }
 }
+
 //確認画面
 .confirm {
     .formList {
@@ -540,6 +560,7 @@ form {
         }
     }
 }
+
 //完了画面
 .box__complete {
     p {
@@ -559,33 +580,35 @@ form {
         }
     }
 }
+
 //7.レッスン概要
-#overview {
+.overview {
     .box__white {
         >section {
             margin: 0;
         }
     }
+    /*
     .nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
         margin-bottom: $wide*2;
     }
+    */
     .iconList {
         margin-bottom: $wide*2;
-        .icon {
-            color: $darkblue;
-            .fa-pen-square {
-                font-size: 1.9rem;
-                position: relative;
-                top: 2px;
-            }
-        }
     }
-    th,td {
-        vertical-align: top;
+    th,
+    td {
+        vertical-align: middle;
         line-height: 1.5;
+    }
+    th {
+        span {
+            font-weight: normal;
+            font-size: $normal_rem;
+        }
     }
     section {
         figure {
@@ -611,6 +634,7 @@ form {
         }
     }
 }
+
 //8.グループプロダクション
 #production {
     a {
@@ -632,6 +656,7 @@ form {
         margin-top: $wide*4;
     }
 }
+
 //9.よくある質問
 .faqNav {
     margin-bottom: $wide;
@@ -651,6 +676,7 @@ form {
         }
     }
 }
+
 .faqList {
     li {
         margin-bottom: $wide*2;
@@ -670,33 +696,29 @@ form {
                 background-size: $wide*2.4 $wide*2.4;
             }
         }
-
         .bunkatsu {
             margin-top: $wide;
-
             &_title {
                 margin-bottom: 4px;
             }
-
             &_text {
                 border: 1px solid $border;
                 padding: $wide;
                 box-sizing: border-box;
                 margin: 0 $wide*3;
             }
-
             &_warning {
                 margin-top: 4px;
             }
         }
     }
-
     .wall {
         padding: 0;
         margin: $wide*1.4 0 $wide*-1;
         display: block;
     }
 }
+
 //10.サイトマップ
 .sitemap {
     ul {
@@ -711,6 +733,7 @@ form {
         }
     }
 }
+
 //11.ログイン
 .loginList {
     li {
@@ -720,26 +743,29 @@ form {
         }
     }
 }
+
 .box__student {
-  .button {
-    margin: $wide*4 $wide*15 0;
-    a {
-      height: $wide*4;
-      line-height: $wide*4;
-      &:hover {
-        background: $darkblue;
-        color: $white;
-      }
+    .button {
+        margin: $wide*4 $wide*15 0;
+        a {
+            height: $wide*4;
+            line-height: $wide*4;
+            &:hover {
+                background: $darkblue;
+                color: $white;
+            }
+        }
     }
-  }
 }
+
 //12.リンク
 .box__link {
     table {
         th {
             text-align: left;
         }
-        th,td {
+        th,
+        td {
             width: 50%;
         }
     }
@@ -747,6 +773,7 @@ form {
         margin-left: 6px;
     }
 }
+
 //13.審査日程
 #howto {
     .iconList {
@@ -755,8 +782,15 @@ form {
             color: $darkblue;
         }
     }
+    .theTable {
+        width: 560px;
+        margin: 20px auto;
+        h5 {
+            margin-bottom: 10px;
+        }
+    }
     table {
-        width: $wide*50;
+        width: $wide*53;
         margin: 0 auto;
         background: #fbfbfb;
         border-collapse: collapse;
@@ -775,7 +809,8 @@ form {
                 }
             }
         }
-        th,td {
+        th,
+        td {
             width: 50%;
             text-align: center;
         }
@@ -787,6 +822,7 @@ form {
         color: $red;
     }
 }
+
 //14.みなさまへ
 #everyone {
     p {
@@ -796,6 +832,7 @@ form {
         }
     }
 }
+
 //15.レッスンスタジオ
 #studio {
     dl {
@@ -804,7 +841,8 @@ form {
             margin-right: $wide;
             color: $darkblue;
         }
-        dt,dd {
+        dt,
+        dd {
             display: table-cell;
             vertical-align: top;
         }
@@ -845,5 +883,52 @@ form {
             border-radius: $wide;
             border: 2px solid #2196F3;
         }
+    }
+}
+
+//16.お知らせ
+.boxInfo {
+    background-color: $white;
+    padding: $wide*2 !important;
+    border: 2px solid $darkblue;
+    &_title {
+        font-size: $huge_rem;
+        margin-bottom: $wide;
+        color: $darkblue;
+
+        .new {
+            font-weight: normal;
+            margin-left: 5px;
+            vertical-align: top;
+        }
+    }
+    p {
+        font-size: $large_rem;
+        line-height: 1.4;
+        &:not(:last-of-type) {
+            margin-bottom: $wide;
+        }
+    }
+}
+
+//17.レッスン見学
+.jwatch {
+    ul {
+        margin: $wide*1.8 0;
+        li {
+            &:not(:last-of-type) {
+                margin-bottom: 8px;
+            }
+        }
+        &:first-of-type {
+            border: 1px solid $darkblue;
+            padding: 20px;
+        }
+        &:last-of-type {
+            font-size: $normal_rem;
+        }
+    }
+    .icon {
+        margin-right: 10px;
     }
 }

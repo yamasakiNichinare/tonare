@@ -11,10 +11,10 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
 session_start();
 
 # ユーザー名とパスワードを設定します。複数名分の設定ができます。
-$userid[]   = '1391';   // ユーザーID
+$userid[]   = '5611';   // ユーザーID
 $username[] = '受講生';  // お名前
-// パスワード「5611」をpassword_hash()関数でハッシュ化した文字列
-$hash[] = '$2y$10$UtRbJTuKZGNmqomHYcBA3OFqTi88.fI9W0yxZdw5k9HHnve.m8fz.';
+// パスワード「1391」をmh.phpでハッシュ化した文字列
+$hash[] = '$2y$10$Jd1KqG7LLIEQJDrwJW35KuodmVZRMjjx0MYJGfl97FrTegqhyvcfW';
 
 $userid[]   = 'test';
 $username[] = 'テスト';
@@ -51,6 +51,12 @@ if ($_SESSION['auth'] !== true) {
 <!DOCTYPE html>
 <html lang="ja">
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+        <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+        <script>
+        window.yjDataLayer = window.yjDataLayer || [];
+        function ytag() { yjDataLayer.push(arguments); }
+        ytag({"type":"ycl_cookie"});
+        </script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="format-detection" content="telephone=no">
@@ -66,7 +72,7 @@ if ($_SESSION['auth'] !== true) {
         <meta name="twitter:site" content="https://twitter.com/tonare_pr?lang=ja">
         <meta name="twitter:image" content="https://tonare.co.jp/assets/images/common/twitter.png" />
         <meta name="twitter:title" content="声優の養成所【東京ナレーション演技研究所】">
-        <meta name="twitter:description" content="声優の養成所なら東京ナレーション演技研究所。学校に通いながら、働きながらでも時間的・経済的に負担の少ないレッスンで声優をめざせます。初心者でも基礎から学べ、グループプロダクションに推薦する関連会社オーディションを年に一度実施しています。">
+        <meta name="twitter:description" content="声優養成所『東京ナレーション演技研究所』の受講生専用ページです。台風や大雪、地震によるレッスン実施の可否など、受講生へのお知らせはこちらからご確認ください。">
         <title>《受講生専用》東ナレからのお知らせ | 声優の養成所【東京ナレーション演技研究所】</title>
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
         <link rel="alternate" media="handheld" href="https://tonare.co.jp/">
@@ -229,7 +235,7 @@ if ($_SESSION['auth'] !== true) {
             <div class="info forSP">
                 <p class="info_title">&#8810;お問い合わせ&#8811;</p>
                 <p class="info_tel"><i class="fas fa-mobile-alt"></i>03-3372-5611</p>
-                <p class="info_date">営業時間：水〜日/12:00〜19:00</p>
+                <p class="info_date">営業日／水〜日曜日<br>営業時間／12:00〜19:00</p>
             </div>
             <small>&copy; 2018 東京ナレーション演技研究所 All Rights Reserved.</small>
         </div>

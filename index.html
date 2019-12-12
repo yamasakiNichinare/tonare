@@ -2,8 +2,13 @@
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+    <script>
+    window.yjDataLayer = window.yjDataLayer || [];
+    function ytag() { yjDataLayer.push(arguments); }
+    ytag({"type":"ycl_cookie"});
+    </script>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex,nofollow">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="東京ナレーション演技研究所,東ナレ,声優の養成所【東京ナレーション演技研究所】">
@@ -33,9 +38,23 @@
     <link rel="apple-touch-icon" href="https://tonare.co.jp/assets/images/common/thumbnail.png">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115044264-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115044264-1');
+        gtag('config', 'AW-812230876');
+    </script>
 </head>
 
 <body id="top">
+
 
     <!--ヘッダー-->
     <header class="header">
@@ -84,22 +103,16 @@
     <div class="wrapper">
         <!--スライダー-->
         <div class="swiper-container">
-            <div id="snow">
-                <div class="inner">
-                    <div class="flake1"></div>
-                    <div class="flake2"></div>
-                    <div class="flake3"></div>
-                    <div class="flake4"></div>
-                    <div class="flake5"></div>
-                    <div class="flake6"></div>
-                    <div class="flake7"></div>
-                    <div class="flake8"></div>
-                    <div class="flake9"></div>
-                </div>
-                <p class="snowman"><img src="assets/images/top/snowman.png" alt="雪だるま"></p>
-            </div>
+            <p class="aicon icon_kuma"><img src="assets/images/top/icon_kuma.png" alt=""></p>
+            <p class="aicon icon_risu"><img src="assets/images/top/icon_risu.png" alt=""></p>
+            <p class="aicon icon_shika"><img src="assets/images/top/icon_shika.png" alt=""></p>
+            <p class="aicon icon_usagi"><img src="assets/images/top/icon_usagi.png" alt=""></p>
+            <!--月画像-->
+            <img src="assets/images/top/moon.png" alt="" id="moon">
+            <!--//月画像-->
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
+                <!-- Slides -->
                 <div class="swiper-slide swiper_img swiper_img01">
                     <p class="p1"><img src="assets/images/top/m_text01.png" alt="2020年度4月生募集開始"></p>
                     <p class="p2">入所金2万円　年間受講料16万円</p>
@@ -532,7 +545,6 @@
                         </div>
                     </section>
                     <!--//ジュニアクラス-->
-
                     <!--入所方法／審査日程-->
                     <section class="box" id="howto">
                         <h2>入所方法／審査日程<i class="fas fa-chevron-down forSP"></i></h2>
@@ -573,22 +585,6 @@
                                                             申込締切日
                                                             <!--<p>お問い合わせ<br>ください。</p>-->
                                                         </th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <time datetime="2019-12-14"><strong>１２月１４日（土）</strong></time>
-                                                        </td>
-                                                        <td>
-                                                            <time datetime="2019-12-09">12月9日（月）</time>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <time datetime="2019-12-22"><strong>１２月２２日（日）</strong></time>
-                                                        </td>
-                                                        <td>
-                                                            <time datetime="2019-12-16">12月16日（月）</time>
-                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -781,7 +777,7 @@
     </nav>
     <!--//固定フッター（SP用）-->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/jquery.sticky-sidebar.js"></script>

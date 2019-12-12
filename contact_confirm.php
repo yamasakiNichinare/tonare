@@ -55,6 +55,12 @@ $_SESSION["textarea2"] = $textarea2;
 <!DOCTYPE html>
 <html lang="ja">
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+        <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+        <script>
+        window.yjDataLayer = window.yjDataLayer || [];
+        function ytag() { yjDataLayer.push(arguments); }
+        ytag({"type":"ycl_cookie"});
+        </script>
         <meta charset="UTF-8">
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -70,7 +76,7 @@ $_SESSION["textarea2"] = $textarea2;
         <meta name="twitter:site" content="https://twitter.com/tonare_pr?lang=ja">
         <meta name="twitter:image" content="https://tonare.co.jp/assets/images/common/twitter.png" />
         <meta name="twitter:title" content="声優の養成所【東京ナレーション演技研究所】">
-        <meta name="twitter:description" content="声優の養成所なら東京ナレーション演技研究所。学校に通いながら、働きながらでも時間的・経済的に負担の少ないレッスンで声優をめざせます。初心者でも基礎から学べ、グループプロダクションに推薦する関連会社オーディションを年に一度実施しています。">
+        <meta name="twitter:description" content="声優養成所『東京ナレーション演技研究所』の資料請求フォームです。弊所への入所を検討されている方はこちらから資料をご請求ください。後日、ご入力いただいたご住所に資料を送付いたします。">
         <title>資料請求確認画面 | 声優の養成所【東京ナレーション演技研究所】</title>
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
         <link rel="alternate" media="handheld" href="https://tonare.co.jp/">
@@ -384,7 +390,7 @@ $_SESSION["textarea2"] = $textarea2;
             <!--//受講生専用サイト-->
         </div>
         <!--//ボタンエリア-->
-        
+
         <!--フッター-->
     <footer class="footer">
         <div class="footer__inner">
@@ -405,7 +411,7 @@ $_SESSION["textarea2"] = $textarea2;
             <div class="info forSP">
                 <p class="info_title">&#8810;お問い合わせ&#8811;</p>
                 <p class="info_tel"><i class="fas fa-mobile-alt"></i>03-3372-5611</p>
-                <p class="info_date">営業時間：水〜日/12:00〜19:00</p>
+                <p class="info_date">営業日／水〜日曜日<br>営業時間／12:00〜19:00</p>
             </div>
             <small>&copy; 2018 東京ナレーション演技研究所 All Rights Reserved.</small>
         </div>

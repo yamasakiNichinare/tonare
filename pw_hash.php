@@ -7,6 +7,12 @@ require_once 'login.php';
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+    <script>
+    window.yjDataLayer = window.yjDataLayer || [];
+    function ytag() { yjDataLayer.push(arguments); }
+    ytag({"type":"ycl_cookie"});
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="msapplication-TileImage" content="https://tonare.co.jp/assets/images/common/thumbnail.png" />

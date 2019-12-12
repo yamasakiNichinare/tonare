@@ -12,6 +12,12 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
 <!DOCTYPE html>
 <html lang="ja">
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+        <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+        <script>
+        window.yjDataLayer = window.yjDataLayer || [];
+        function ytag() { yjDataLayer.push(arguments); }
+        ytag({"type":"ycl_cookie"});
+        </script>
         <meta charset="UTF-8">
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,7 +33,7 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
         <meta name="twitter:site" content="https://twitter.com/tonare_pr?lang=ja">
         <meta name="twitter:image" content="https://tonare.co.jp/assets/images/common/twitter.png" />
         <meta name="twitter:title" content="声優の養成所【東京ナレーション演技研究所】">
-        <meta name="twitter:description" content="声優の養成所なら東京ナレーション演技研究所。学校に通いながら、働きながらでも時間的・経済的に負担の少ないレッスンで声優をめざせます。初心者でも基礎から学べ、グループプロダクションに推薦する関連会社オーディションを年に一度実施しています。">
+        <meta name="twitter:description" content="声優養成所『東京ナレーション演技研究所』の資料請求フォームです。弊所への入所を検討されている方はこちらから資料をご請求ください。後日、ご入力いただいたご住所に資料を送付いたします。">
         <title>資料請求 | 声優の養成所【東京ナレーション演技研究所】</title>
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
         <link rel="alternate" media="handheld" href="https://tonare.co.jp/">
@@ -122,6 +128,16 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
                     select2.options[0] = new Option("1年生");
                     select2.options[1] = new Option("2年生");
                 }
+
+                else if (select1.options[select1.selectedIndex].value == "小学生")
+                {
+                    select2.options[0] = new Option("1年生");
+                    select2.options[1] = new Option("2年生");
+                    select2.options[2] = new Option("3年生");
+                    select2.options[3] = new Option("4年生");
+                    select2.options[4] = new Option("5年生");
+                    select2.options[5] = new Option("6年生");
+                }
             }
         </script>
         <script>
@@ -207,6 +223,7 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
                                     <p class="c_text"><i class="fas fa-pen-square"></i><span>資料請求にあたってご提供いただく皆様の個人情報につきましては、入所案内や入所関連情報の送付またはお電話でのご確認のみに使用し、ご本人様の承諾なしに第三者への提供は一切行いません。詳しくは「<span class="withUnderLine"><a href="policy.html">個人情報の取り扱いについて</a></span>」をご覧ください。</span></p>
                                     <p class="c_text"><i class="fas fa-pen-square"></i><span>弊所では、ご提供いただきました個人情報をもとにした「電話」「SNS」による個別の勧誘を一切いたしませんのでご安心ください。<br>※ご郵送先など不明な点がある場合のみ、ご連絡させていただくことがあります。</span></p>
                                     <p class="c_text"><i class="fas fa-pen-square"></i><span>資料の発送は日本国内のみとさせていただきます。</span></p>
+                                    <p class="c_text"><i class="fas fa-pen-square"></i><span>現在の資料お届け目安は、１週間から10日前後です。</span></p>
                                     <ul class="formList">
                                         <li>
                                             <div>
@@ -335,6 +352,7 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
                                                    <li>
                                                        <select name = "selectName1" onChange="functionName()" class="validate[required]" data-promptPosition="inline">
                                                           <option value="--">--
+                                                              <option value="小学生">小学生
                                                           <option value="中学生">中学生
                                                            <option value = "高校生">高校生
                                                            <option value = "大学生">大学生
@@ -416,7 +434,7 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
             <!--//受講生専用サイト-->
         </div>
         <!--//ボタンエリア-->
-        
+
         <!--フッター-->
     <footer class="footer">
         <div class="footer__inner">
@@ -437,7 +455,7 @@ header('X-FRAME-OPTIONS: SAMEORIGIN');
             <div class="info forSP">
                 <p class="info_title">&#8810;お問い合わせ&#8811;</p>
                 <p class="info_tel"><i class="fas fa-mobile-alt"></i>03-3372-5611</p>
-                <p class="info_date">営業時間：水〜日/12:00〜19:00</p>
+                <p class="info_date">営業日／水〜日曜日<br>営業時間／12:00〜19:00</p>
             </div>
             <small>&copy; 2018 東京ナレーション演技研究所 All Rights Reserved.</small>
         </div>

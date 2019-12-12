@@ -11,6 +11,12 @@ session_destroy();
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+    <script>
+    window.yjDataLayer = window.yjDataLayer || [];
+    function ytag() { yjDataLayer.push(arguments); }
+    ytag({"type":"ycl_cookie"});
+    </script>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -157,7 +163,7 @@ session_destroy();
             <div class="info forSP">
                 <p class="info_title">&#8810;お問い合わせ&#8811;</p>
                 <p class="info_tel"><i class="fas fa-mobile-alt"></i>03-3372-5611</p>
-                <p class="info_date">営業時間：水〜日/12:00〜19:00</p>
+                <p class="info_date">営業日／水〜日曜日<br>営業時間／12:00〜19:00</p>
             </div>
             <small>&copy; 2018 東京ナレーション演技研究所 All Rights Reserved.</small>
         </div>

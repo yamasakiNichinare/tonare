@@ -2,64 +2,196 @@
 1.swipe
 ----------------------------------------------------*/
 //1.swipe
-.aicon {
+.sori {
     position: absolute;
+    animation: Sori 5s linear 7.5s infinite;
     z-index: 8;
-}
-.icon_kuma {
-    right: 10%;
-    animation: r1 6s linear infinite;
     img {
-        width: 40px;
+        width: 30vw;
     }
 }
-.icon_shika {
-    left: 30%;
-    animation: r2 6s linear infinite;
-    animation-delay: 3s;
-    bottom: -60px;
+.santa {
+    position: absolute;
+    left: 4vw;
+    top: -80px;
+    z-index: 8;
     img {
-        width: 70px;
+        width: 12vw;
+    }
+
+    &_vertical {
+        animation: Santav 4s linear 1s forwards;
+    }
+
+    &_horizontal {
+        animation: Santah 5s linear 5s infinite;
+        img {
+            animation: rotate 2s linear infinite;
+        }
     }
 }
-.icon_risu {
-    right: 30%;
-    animation: r3 6s linear infinite;
-    animation-delay: 5s;
-    bottom:-60px;
-    img {
-        width: 30px;
+@keyframes Santav {
+  0%{top:-80px;}
+  100% {top: 120vw;}
+}
+@keyframes Santah {
+  0%{left:-10vw;top:60vw;}
+  100% {left:200vw;top:60vw;}
+}
+@keyframes Sori {
+    0% {
+        left: -20vw;
+        top: 50vw;
+    }
+    100% {
+        left: 220vw;
     }
 }
-.icon_usagi {
+@keyframes rotate {
+  0%{
+  transform: rotate(0deg);}
+  100% {
+  transform: rotate(360deg);}
+}
+#snow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+#snow .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#snow .inner div {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Drop;
+    animation-name: Drop;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #fff;
+}
+.flake1 {
     left: 10%;
-    animation: r4 6s linear infinite;
-    animation-delay: 7s;
-    bottom: -30px;
-    img {
-        width: 40px;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+}
+
+.flake2 {
+    left: 20%;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.flake3 {
+    left: 30%;
+    -webkit-animation-duration: 2.9s;
+    animation-duration: 2.9s;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.flake4 {
+    left: 40%;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.flake5 {
+    left: 50%;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.flake6 {
+    left: 60%;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.flake7 {
+    left: 70%;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.flake8 {
+    left: 80%;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.flake9 {
+    left: 90%;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+@-webkit-keyframes Drop {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        opacity: 0.3;
     }
 }
 
-@keyframes r1 {
-  0%{bottom:-200px;}
-  50%{bottom:-20px;}
-  100% {bottom: -200px;}
-}
-@keyframes r2 {
-    0%{bottom:-200px;}
-    50%{bottom:14px;}
-    100% {bottom: -200px;}
-}
-@keyframes r3 {
-    0%{bottom:-230px;}
-    50%{bottom:16px;}
-    100% {bottom: -230px;}
-}
-@keyframes r4 {
-  0%{bottom:-150px;}
-  50%{bottom:50px;}
-  100% {bottom: -150px;}
+@keyframes Drop {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        opacity: 0.3;
+    }
 }
 .swiper-container {
     height: 300px;
@@ -81,11 +213,22 @@
         width: 100%;
         height: 28px;
         display: block;
-        background: url(../images/top/tree.png) repeat-x left bottom;
-        background-size: 246px 28px;
+        background: url(../images/top/tree.png) repeat-x right bottom;
+        background-size: contain;
         z-index: 10;
+        animation: theBackground 20s linear infinite;
     }
 
+    @keyframes theBackground {
+        0% {
+            background-position: right bottom;
+        }
+        100% {
+            background-position: right 140vw bottom;
+        }
+    }
+
+    /*
     &:after {
         content: "";
         position: absolute;
@@ -98,6 +241,7 @@
         animation: bg-slider 100s linear infinite;
         z-index: 10;
     }
+    */
 
     @keyframes bg-slider {
         from {

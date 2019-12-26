@@ -1,0 +1,899 @@
+/* table of contents----------------------------------
+1.共通
+2.最新情報
+3.特色
+4.個人情報
+5.会社概要
+6.フォーム
+7.レッスン概要
+8.グループプロダクション
+9.よくある質問
+10.サイトマップ
+11.ログイン
+12.リンク
+13.審査日程
+14.みなさまへ
+15.レッスンスタジオ
+----------------------------------------------------*/
+
+//1.共通
+.wrapper {
+    padding: $wide*16 0 $wide*6;
+    background: $lightblue;
+    .wall {
+        width: 100%;
+        padding-top: $wide*6;
+        font-size: $large_rem;
+        &__inner {
+            width: $wide*98;
+            margin: 0 auto;
+            display: flex;
+            main {
+                width: 80%;
+                padding-right: $wide*3;
+                section {
+                    margin-bottom: $wide*6;
+                    padding: 0;
+                }
+                #production {
+                    margin: 0;
+                }
+            }
+            .sidebar {
+                width: 20%;
+            }
+        }
+    }
+    .box__white {
+        padding: 44px 24px;
+    }
+    .box {
+        h2 {
+            color: $darkblue;
+            text-align: center;
+            font-size: 3.4rem;
+            position: relative;
+            margin-bottom: $wide*2;
+        }
+        &__contents {
+            &__inner {
+                p {
+                    line-height: 1.7;
+                }
+            }
+        }
+        section {
+            margin-bottom: $wide*6;
+            &:last-of-type {
+                margin: 0;
+            }
+            h3 {
+                margin-bottom: $wide*2.4;
+                line-height: 1.4;
+                position: relative;
+                border-top: 2px solid $darkblue;
+                border-bottom: 2px solid $darkblue;
+                padding: $moderate 0;
+                &#jr {
+                    span {
+                        background-color: #f3afad;
+                        font-size: $small_rem;
+                        margin-left: $wide;
+                        color: $white;
+                        padding: 0 $moderate;
+                        border-radius: 4px;
+                        line-height: $wide*2;
+                        height: $wide*2;
+                        font-weight: normal;
+                        vertical-align: 1px;
+                        display: inline-block;
+                    }
+                }
+            }
+            section {
+                margin-bottom: $wide*1.8;
+                h4 {
+                    margin-bottom: $wide*1.8;
+                    line-height: 1.4;
+                    border-bottom: 1px solid $darkblue;
+                    border-left: 4px solid $darkblue;
+                    padding-left: 4px;
+                    height: $wide*3;
+                    .current {
+                        background-color: $pink;
+                        font-size: $small_rem;
+                        margin-left: $wide;
+                        color: $white;
+                        padding: 0 $moderate;
+                        border-radius: 4px;
+                        line-height: $wide*2;
+                        height: $wide*2;
+                        font-weight: normal;
+                        vertical-align: 1px;
+                        display: inline-block;
+                        &_not {
+                            background-color: $darkblue;
+                            font-size: $small_rem;
+                            margin-left: $wide;
+                            color: $white;
+                            padding: 0 $moderate;
+                            border-radius: 4px;
+                            line-height: $wide*2;
+                            height: $wide*2;
+                            font-weight: normal;
+                            vertical-align: 1px;
+                            display: inline-block;
+                        }
+                    }
+                }
+                h5 {
+                    margin: 0;
+                    &.class {
+                        background: $darkblue;
+                        color: $white;
+                        border-radius: 2px;
+                        padding: 4px;
+                        display: inline-block;
+                    }
+                }
+                >.small {
+                    font-size: $small_rem;
+                }
+            }
+        }
+    }
+    .iconList {
+        li {
+            margin-bottom: $wide;
+            @include table;
+            span {
+                display: table-cell;
+                vertical-align: top;
+                line-height: 1.5;
+                &.icon {
+                    width: 4%;
+                }
+                &.text {
+                    width: 96%;
+                }
+            }
+        }
+    }
+    .small_t_list {
+        margin-top: $wide*1.2;
+        font-size: $normal_rem;
+        li {
+            width: 100%;
+            margin: 0 0 6px 0;
+            &:last-of-type {
+                margin: 0;
+            }
+            span {
+                &.icon {
+                    width: 2%;
+                }
+                &.text {
+                    width: 98%;
+                }
+            }
+        }
+    }
+    table {
+        width: 100%;
+        border: 1px solid $border;
+        tr {
+            border: 1px solid $border;
+        }
+        th,
+        td {
+            padding: $wide*1.2
+        }
+        th {
+            width: 45%;
+            background: $lightblue;
+            font-weight: bold;
+        }
+        td {
+            width: 55%;
+            line-height: 1.5;
+        }
+    }
+}
+
+//2.最新情報
+.newslist {
+    &__item {
+        margin-bottom: $wide*2;
+        border-bottom: 1px solid $border;
+        padding-bottom: $wide*2;
+        &__inner {
+            @include table;
+            time,
+            p {
+                display: table-cell;
+                vertical-align: top;
+                line-height: 1.5;
+            }
+            time {
+                color: $gray;
+                width: $wide*15;
+            }
+            p {
+                width: 100%;
+                .new {
+                    display: inline-block;
+                    padding: 0 4px;
+                    background: $pink;
+                    color: $white;
+                    border-radius: 4px;
+                    margin-right: $moderate;
+                    font-size: $small_rem;
+                }
+            }
+        }
+    }
+}
+
+.historyLink {
+    .fa-history {
+        margin-right: 2px;
+        color: $darkblue;
+    }
+    text-align: right;
+    margin-top: $wide;
+}
+
+//3.特色
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &.about {
+        li {
+            margin-bottom: $wide*2.4;
+            &:last-of-type {
+                margin: 0;
+            }
+            img {
+                width: $wide*50;
+                margin: 0 auto;
+            }
+            div {
+                @include table;
+                margin-bottom: $wide;
+                >span {
+                    font-weight: bold;
+                    display: table-cell;
+                    vertical-align: top;
+                    line-height: 1.7;
+                    &.number {
+                        width: $wide*3;
+                    }
+                }
+            }
+            ol {
+                padding-left: $wide*3;
+                li {
+                    margin-bottom: $wide*2;
+                    >span {
+                        display: table-cell;
+                        vertical-align: top;
+                        line-height: 1.7;
+                        &.number {
+                            width: $wide*2.5;
+                            color: $darkblue;
+                            font-size: 1.9rem;
+                            vertical-align: -2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.groupImg {
+    margin-top: $wide*3;
+}
+
+.aboutMethod {
+    width: $wide*50;
+    margin: 0 auto !important;
+    background-color: $darkblue;
+    padding: $wide*2 !important;
+    box-sizing: border-box;
+    &__title {
+        background-color: #c3d7f2;
+        color: $darkblue;
+        height: $wide*4;
+        line-height: $wide*4;
+        text-align: center;
+        padding: 0 $wide*2;
+        border-radius: $wide*2;
+        margin-bottom: $wide*2;
+        font-size: 2.2rem !important;
+    }
+    &__list {
+        list-style-type: decimal;
+        li {
+            margin-bottom: $wide*1.4 !important;
+            color: $white;
+            line-height: 1.4;
+            &:last-of-type {
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+//4.個人情報など
+.page {
+    h2 {
+        color: $darkblue;
+        text-align: center;
+        font-size: 3.4rem;
+        position: relative;
+        margin-bottom: $wide*2;
+    }
+    .box__white {
+        p {
+            line-height: 1.6;
+        }
+        >p {
+            margin-bottom: $wide*2;
+        }
+        >section {
+            h4 {
+                margin-bottom: $wide;
+                line-height: 1.4;
+            }
+            >section {
+                margin-top: $wide*2;
+                &:last-of-type {
+                    margin: 0;
+                }
+                a {
+                    color: $linkcolor;
+                }
+            }
+        }
+    }
+}
+
+//5.会社概要
+.company {
+    >li {
+        border-bottom: 1px solid $border;
+        padding: $wide*2 0;
+        &:first-of-type {
+            padding: 0 0 $wide*2;
+        }
+        &:last-of-type {
+            border: none;
+            padding: $wide*2 0 0;
+        }
+    }
+    &__item {
+        &__inner {
+            @include table;
+            >div {
+                display: table-cell;
+                vertical-align: top;
+            }
+        }
+        &__left {
+            width: $wide*14;
+            font-weight: bold;
+        }
+        &__right {
+            width: 100%;
+            ul {
+                li {
+                    margin-bottom: $moderate;
+                    line-height: 1.6;
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .access {
+        p {
+            font-weight: bold;
+            margin-bottom: $moderate;
+        }
+        iframe {
+            width: 100%;
+            height: 40vh
+        }
+    }
+}
+
+//6.フォーム
+.c_text {
+    @include table;
+    margin-bottom: $wide;
+    .fa-pen-square,
+    >span {
+        display: table-cell;
+        vertical-align: top;
+        width: 96%;
+    }
+    .fa-pen-square {
+        color: $darkblue;
+        width: 16px;
+        padding-top: 4px;
+    }
+}
+
+form {
+    .formList {
+        >li {
+            margin-bottom: $wide*2;
+            &:last-of-type {
+                margin: 0;
+            }
+            >div {
+                &:first-of-type {
+                    margin-bottom: $moderate;
+                    font-weight: bold;
+                }
+            }
+        }
+        &.btns {
+            margin-top: $wide*2;
+            input {
+                height: $wide*4.4;
+                line-height: $wide*4.4;
+            }
+        }
+        .name {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    width: 48%;
+                }
+            }
+        }
+        .must {
+            font-size: $small_rem;
+            padding: 2px 4px;
+            font-weight: normal;
+            margin-left: $moderate;
+        }
+        .small {
+            font-size: 1.3rem;
+            margin-left: 4px;
+        }
+        .birth {
+            li {
+                &:nth-child(odd) {
+                    width: 33%;
+                }
+            }
+            select {
+                width: 100%;
+                background-size: 20px;
+            }
+            p {
+                padding: 0 $moderate;
+            }
+        }
+        .address {
+            .banchi {
+                margin-top: $wide*1.4;
+            }
+        }
+        .jobLlist {
+            ul {
+                li {
+                    margin-bottom: $wide*1.4;
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                }
+            }
+            select {
+                background: url("../images/common/icon_arrow_bottom.png") no-repeat 96% center;
+                background-size: 20px;
+            }
+        }
+        .fixedPhone {
+            margin-top: $wide;
+        }
+        .radioCheckList {
+            li {
+                margin: $wide;
+                label {
+                    input[type="text"] {
+                        width: $wide*61.2;
+                        margin: 0 0 0 $moderate;
+                    }
+                }
+            }
+        }
+    }
+    .btns {
+        margin-top: $wide*2;
+        text-align: center;
+        li {
+            width: $wide*34.8;
+            vertical-align: top;
+            display: inline-block;
+            input {
+                cursor: pointer;
+                border: none;
+                font-weight: bold;
+            }
+            &.backBtnWrap {
+                margin-right: $wide;
+                &:hover {
+                    opacity: 0.7;
+                }
+                input {
+                    line-height: 1;
+                    background: $border;
+                    color: $black;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+//確認画面
+.confirm {
+    .formList {
+        .s_first {
+            margin-right: $wide*2;
+        }
+    }
+}
+
+//完了画面
+.box__complete {
+    p {
+        font-weight: bold;
+        font-size: $huge_rem;
+    }
+    .button--back {
+        height: $wide*4;
+        line-height: $wide*4;
+        width: $wide*40;
+        margin: $wide*4 auto 0;
+        a {
+            &:hover {
+                background: $pink;
+                color: $white;
+            }
+        }
+    }
+}
+
+//7.レッスン概要
+.overview {
+    .box__white {
+        >section {
+            margin: 0;
+        }
+    }
+    /*
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: $wide*2;
+    }
+    */
+    .iconList {
+        margin-bottom: $wide*2;
+        .icon {
+            color: $darkblue;
+            .fa-pen-square {
+                font-size: 1.9rem;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+    th,
+    td {
+        vertical-align: top;
+        line-height: 1.5;
+    }
+    section {
+        figure {
+            margin: 0;
+            img {
+                display: block;
+                margin: 0 auto;
+                width: $wide*50;
+            }
+        }
+    }
+    .list {
+        @include table;
+        span {
+            display: table-cell;
+            vertical-align: top;
+            &.date {
+                width: 20%;
+            }
+            &.time {
+                width: 80%;
+            }
+        }
+    }
+}
+
+//8.グループプロダクション
+#production {
+    a {
+        color: $linkcolor;
+    }
+    .targetBlink {
+        li {
+            margin-bottom: $wide*1.6;
+            &:last-of-type {
+                margin: 0;
+            }
+            .fa-external-link-alt {
+                margin-left: 6px;
+            }
+        }
+    }
+    p {
+        text-align: right;
+        margin-top: $wide*4;
+    }
+}
+
+//9.よくある質問
+.faqNav {
+    margin-bottom: $wide;
+    ul {
+        @include flexFull;
+        li {
+            margin-bottom: $wide;
+            a {
+                color: $linkcolor;
+                line-height: 1.4;
+            }
+            .fa-angle-down {
+                margin-left: 4px;
+                font-size: $huge_rem;
+                vertical-align: -4px;
+            }
+        }
+    }
+}
+
+.faqList {
+    li {
+        margin-bottom: $wide*2;
+        &:last-of-type {
+            margin: 0;
+        }
+        p {
+            padding-left: $wide*3;
+            &.q {
+                background: url('../images/faq/icon_q.png') no-repeat left 2px;
+                background-size: $wide*2.4 $wide*2.4;
+                margin-bottom: $moderate;
+                font-weight: bold;
+            }
+            &.a {
+                background: url('../images/faq/icon_a.png') no-repeat left 2px;
+                background-size: $wide*2.4 $wide*2.4;
+            }
+        }
+        .bunkatsu {
+            margin-top: $wide;
+            &_title {
+                margin-bottom: 4px;
+            }
+            &_text {
+                border: 1px solid $border;
+                padding: $wide;
+                box-sizing: border-box;
+                margin: 0 $wide*3;
+            }
+            &_warning {
+                margin-top: 4px;
+            }
+        }
+    }
+    .wall {
+        padding: 0;
+        margin: $wide*1.4 0 $wide*-1;
+        display: block;
+    }
+}
+
+//10.サイトマップ
+.sitemap {
+    ul {
+        li {
+            margin-bottom: $wide*2;
+            &:last-of-type {
+                margin: 0;
+            }
+            a {
+                color: $linkcolor;
+            }
+        }
+    }
+}
+
+//11.ログイン
+.loginList {
+    li {
+        margin-bottom: $wide*2;
+        span {
+            width: $wide*13;
+        }
+    }
+}
+
+.box__student {
+    .button {
+        margin: $wide*4 $wide*15 0;
+        a {
+            height: $wide*4;
+            line-height: $wide*4;
+            &:hover {
+                background: $darkblue;
+                color: $white;
+            }
+        }
+    }
+}
+
+//12.リンク
+.box__link {
+    table {
+        th {
+            text-align: left;
+        }
+        th,
+        td {
+            width: 50%;
+        }
+    }
+    .fa-external-link-alt {
+        margin-left: 6px;
+    }
+}
+
+//13.審査日程
+#howto {
+    .iconList {
+        margin-bottom: $wide;
+        .icon {
+            color: $darkblue;
+        }
+    }
+    .theTable {
+        width: 560px;
+        margin: 20px auto;
+        h5 {
+            margin-bottom: 10px;
+        }
+    }
+    table {
+        width: $wide*53;
+        margin: 0 auto;
+        background: #fbfbfb;
+        border-collapse: collapse;
+        tr {
+            th {
+                &:first-of-type {
+                    border-right: 1px solid $border;
+                }
+            }
+            td {
+                &:first-of-type {
+                    border-right: 1px solid $border;
+                    strong {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        th,
+        td {
+            width: 50%;
+            text-align: center;
+        }
+    }
+    .c_text {
+        text-align: right;
+        margin-right: $wide*10.4;
+        font-size: 1.2rem;
+        color: $red;
+    }
+}
+
+//14.みなさまへ
+#everyone {
+    p {
+        margin-bottom: $wide*2;
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+}
+
+//15.レッスンスタジオ
+#studio {
+    dl {
+        @include table;
+        .fa-subway {
+            margin-right: $wide;
+            color: $darkblue;
+        }
+        dt,
+        dd {
+            display: table-cell;
+            vertical-align: top;
+        }
+        dt {
+            width: 16%;
+        }
+        dd {
+            width: 84%;
+            ul {
+                li {
+                    @include table;
+                    margin-bottom: $moderate;
+                    &:last-of-type {
+                        margin: 0;
+                    }
+                    span {
+                        display: table-cell;
+                        vertical-align: top;
+                        &.train {
+                            width: 60%;
+                        }
+                        &.foot {
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #maps {
+        height: $wide*40;
+        border: 2px solid #2196F3;
+    }
+    figure {
+        margin: 0;
+        img {
+            height: $wide*40;
+            border-radius: $wide;
+            border: 2px solid #2196F3;
+        }
+    }
+}
+
+//16.お知らせ
+.boxInfo {
+    background-color: $white;
+    padding: $wide*2 !important;
+    border: 2px solid $darkblue;
+    &_title {
+        font-size: $huge_rem;
+        margin-bottom: $wide;
+        color: $darkblue;
+    }
+    p {
+        font-size: $large_rem;
+        line-height: 1.4;
+        &:not(:last-of-type) {
+            margin-bottom: $wide;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import "lib/color";
+@import "lib/mixin";
+@import "lib/reset";
+@import "lib/setting";
+@import "lib/thebuttons";
+
+//PC版
+@media only screen and (min-width:768px) {
+    @import "pc/common/footer";
+    @import "pc/common/header";
+    @import "pc/common/media_query";
+    @import "pc/common/page_top";
+    @import "pc/common/swipe";
+    @import "pc/parts/contents";
+}
+
+//SP版
+@media only screen and (max-width:767px) {
+    @import "sp/common/footer";
+    @import "sp/common/header";
+    @import "sp/common/media_query";
+    @import "sp/common/page_top";
+    @import "sp/common/swipe";
+    @import "sp/parts/contents";
+}

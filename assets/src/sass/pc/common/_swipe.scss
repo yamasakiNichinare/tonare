@@ -2,57 +2,13 @@
 1.swipe
 ----------------------------------------------------*/
 //1.swipe
-//かぼちゃ
-.sori {
+.snowman {
     position: absolute;
-    animation: Sori 10s linear 10.4s infinite;
-    z-index: 8;
-    img {
-        width: 200px;
-    }
-}
-.santa {
-    position: absolute;
-    left: 4vw;
-    top: -80px;
-    z-index: 8;
+    right: 20px;
+    bottom: 26px;
     img {
         width: 60px;
     }
-
-    &_vertical {
-        animation: Santav 3s linear 1s forwards;
-    }
-
-    &_horizontal {
-        animation: Santah 10s linear 5s infinite;
-        img {
-            animation: rotate 2s linear infinite;
-        }
-    }
-}
-@keyframes Santav {
-  0%{top:-80px;}
-  100% {top: 500px;}
-}
-@keyframes Santah {
-  0%{left:-100px;top:330px;}
-  100% {left:1900px;top:330px;}
-}
-@keyframes Sori {
-    0% {
-        left: -200px;
-        bottom: -50px;
-    }
-    100% {
-        left: 2100px;
-    }
-}
-@keyframes rotate {
-  0%{
-  transform: rotate(0deg);}
-  100% {
-  transform: rotate(360deg);}
 }
 #snow {
     width: 100%;
@@ -215,44 +171,11 @@
         width: 100%;
         height: 40px;
         display: block;
-        background: url(../images/top/tree.png) repeat-x left bottom;
-        background-size: 352px 40px;
+        background: url(../images/top/snowbottom.png) repeat-x left bottom;
+        background-size: 406px 40px;
         z-index: 10;
         animation: theBackground 40s linear infinite;
     }
-    /*
-    &:after {
-        content: "";
-        position: absolute;
-        top:10px;
-        width: 100%;
-        height: 60px;
-        display: block;
-        background: url(../images/top/cloud.png) repeat-x left bottom;
-        background-size: 1200px 60px;
-        animation: bg-slider 80s linear infinite;
-        z-index: 10;
-    }
-    */
-
-    @keyframes theBackground {
-        0% {
-            background-position: right bottom;
-        }
-        100% {
-            background-position: right 140vw bottom;
-        }
-    }
-    /*
-    @keyframes bg-slider {
-        from {
-            background-position: 0 0;
-        }
-        to {
-            background-position: -1200px 0;
-        }
-    }
-    */
 }
 
 .swiper_img {
@@ -432,4 +355,7 @@
 
 .swiper-pagination-bullet {
     background: $darkblue;
+}
+.swiper-button-next, .swiper-button-prev {
+    z-index: 50;
 }

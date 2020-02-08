@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /contact_complete.php
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tonare.co.jp/sitemap.xml

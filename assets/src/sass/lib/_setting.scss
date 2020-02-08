@@ -198,3 +198,48 @@ $breakpoint-md: 768px;
         display: none !important;
     }
 }
+
+//各種テキスト設定
+.text {
+    &_center {
+        text-align: center;
+    }
+    &_bold {
+        font-weight: bold;
+    }
+}
+
+//外部リンクアイコン
+.fa-external-link-alt {
+    margin-left: 6px;
+}
+
+//横並び
+.h_item {
+    display: flex;
+}
+
+//figure
+figure {
+    margin: 0;
+}
+
+
+.boxInfo {
+    ul {
+        list-style-type: square;
+        padding-left:20px;
+        li {
+            line-height: 1.5;
+            &:not(:first-of-type) {
+                @include pc {
+                    margin-top: 15px;
+                }
+
+                @include sp {
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+}

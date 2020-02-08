@@ -634,6 +634,7 @@ form {
     .targetBlink {
         li {
             margin-bottom: $wide*1.6;
+            line-height: 1.3;
             &:last-of-type {
                 margin: 0;
             }
@@ -912,5 +913,18 @@ form {
     }
     .icon {
         margin-right: 8px;
+    }
+}
+
+
+
+//東ナレについて
+#about {
+    ul.withUnderLine {
+        margin: 14px 0 0;
+        display: block;
+        li {
+            margin: 24px 0;
+        }
     }
 }

@@ -7,7 +7,7 @@ css_dir = "assets/css"
 sass_dir = "assets/src/sass"
 images_dir = "/"
 javascripts_dir = "js"
-output_style = :expanded
+output_style = :compressed
 line_comments = false
 
 # You can select your preferred output style here (can be overridden via the command line):

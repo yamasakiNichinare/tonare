@@ -1,0 +1,64 @@
+/* table of contents----------------------------------
+1.ヘッダー
+----------------------------------------------------*/
+
+//1.ヘッダー
+.header {
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid $border;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: $white;
+    transition: all 0.3s ease-in-out;
+    &__inner {
+        @include flexCenter;
+        padding: $wide;
+        justify-content: center;
+    }
+    &__left {
+        &__inner {
+            @include flexCenter;
+            justify-content: center;
+            .img {
+                width: $wide*4;
+                img {
+                    width: $wide*3.4;
+                }
+            }
+            .text {
+                //width: 100%;
+                p {
+                    font-size: $tiny_rem;
+                    line-height: 1.4;
+                }
+                h1 {
+                    img {
+                        width: $wide*20;
+                        //display: block;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        a {
+            display: block;
+            color: $black;
+        }
+    }
+    &__right {
+        .button {
+            width: $wide*9;
+            a {
+                font-size: $normal_rem;
+                padding: $moderate;
+                line-height: $wide*1.5;
+                text-align: center;
+                .fa-file-alt {
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+}

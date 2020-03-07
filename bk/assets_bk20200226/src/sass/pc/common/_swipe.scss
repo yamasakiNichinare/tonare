@@ -1,0 +1,361 @@
+/* table of contents----------------------------------
+1.swipe
+----------------------------------------------------*/
+//1.swipe
+.snowman {
+    position: absolute;
+    right: 20px;
+    bottom: 26px;
+    img {
+        width: 60px;
+    }
+}
+#snow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+#snow .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#snow .inner div {
+    opacity: 0;
+    -webkit-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-animation-name: Drop;
+    animation-name: Drop;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #fff;
+}
+.flake1 {
+    left: 10%;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+}
+
+.flake2 {
+    left: 20%;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.flake3 {
+    left: 30%;
+    -webkit-animation-duration: 2.9s;
+    animation-duration: 2.9s;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.flake4 {
+    left: 40%;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.flake5 {
+    left: 50%;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.flake6 {
+    left: 60%;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.flake7 {
+    left: 70%;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.flake8 {
+    left: 80%;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.flake9 {
+    left: 90%;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+@-webkit-keyframes Drop {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        opacity: 0.3;
+    }
+}
+
+@keyframes Drop {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        opacity: 0.3;
+    }
+}
+
+.swiper-container {
+    height: $wide*40;
+    width: $wide*98;
+    margin: 0 auto;
+
+    #moon {
+        width: 50px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        display: block;
+        background: url(../images/top/snowbottom.png) repeat-x left bottom;
+        background-size: 406px 40px;
+        z-index: 10;
+        animation: theBackground 40s linear infinite;
+    }
+}
+
+.swiper_img {
+    padding: $wide*3;
+    box-sizing: border-box;
+}
+
+.swiper_img01 {
+    background: $darkblue;
+    color: $white;
+    position: relative;
+
+    canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    img {
+        width: 500px;
+        display: block;
+        margin: 0 auto 40px;
+    }
+    p {
+        line-height: 1.5;
+        font-size: 2rem;
+        text-align: center;
+        &.p1 {
+            font-weight: bold;
+            font-size: 4.6rem;
+            margin-bottom: $wide*2;
+            color: $pink;
+            padding-top: $wide*4;
+            span {
+                font-size: 4rem;
+            }
+        }
+        &.p2 {
+            font-size: 2.8rem;
+            margin-bottom: $wide*2.4;
+        }
+        &.p3 {
+            font-size: 2.4rem;
+            margin: 0 0 20px;
+            color: $buttonColor;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+        &.p4 {
+            color: $pink;
+        }
+        &.jr {
+            color: #f3afad;
+            font-size: 3.6rem;
+            margin-bottom: $wide*2;
+            margin-right: $wide;
+            .fa-arrow-right {
+                margin-left: $wide;
+            }
+        }
+        .lesson {
+            display: inline-block;
+            margin-top: $wide*2;
+            font-size: 3.2rem;
+            .underline {
+                border-bottom: 2px solid $pink;
+            }
+        }
+    }
+}
+
+.swiper_img02 {
+    //background: $pink url('../images/top/m.png') no-repeat 90% 86%;
+    //background-size: 22%;
+    background: $darkblue;
+    //background: linear-gradient(to left, #6deaf5, #2e7fe3);
+    color: $white;
+    position: relative;
+    padding: $wide*7;
+    p {
+        @include table;
+        width: $wide*75.8;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-size: 2rem;
+        margin: 0 auto $wide;
+        &.p1 {
+            font-weight: bold;
+            font-size: 3rem;
+            margin-bottom: $wide*1.2;
+            text-align: center;
+            color: $pink;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        span {
+            display: table-cell;
+            vertical-align: top;
+            &.number {
+                width: $wide*5;
+            }
+            &.text {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.swiper_img03 {
+    background: $darkblue;
+    color: $white;
+    padding: $wide*3 $wide*5.7;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: center;
+        line-height: 1.4;
+        color: $pink;
+        &.p1 {
+            margin-bottom: $wide*1.4;
+        }
+        &.p2 {
+            margin-top: $wide*1.4;
+        }
+    }
+    ol {
+        list-style-type: none;
+        li {
+            margin-bottom: $wide*1.1;
+            line-height: 1.5;
+            padding-left: 1em;
+            text-indent: -1em;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.swiper_img04 {
+    background: $pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+        line-height: 1.5;
+        text-align: center;
+        color: $darkblue;
+        &.p1 {
+            font-size: 4.6rem;
+            font-weight: bold;
+        }
+        &.p2 {
+            font-size: 3.6rem;
+            margin-top: $wide;
+            line-height: 1.2;
+        }
+        &.p3 {
+            font-weight: bold;
+            font-size: 3.4rem;
+            color: $white;
+            margin-top: $wide*5;
+        }
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: $darkblue;
+}
+
+.swiper-pagination-bullet {
+    background: $darkblue;
+}
+.swiper-button-next, .swiper-button-prev {
+    z-index: 50;
+}
